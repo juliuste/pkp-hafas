@@ -1,0 +1,35 @@
+{
+	"name": "pkp-hafas",
+	"description": "JavaScript client for the PKP HAFAS API.",
+	"version": "1.0.0",
+	"main": "index.js",
+	"files": [
+		"index.js",
+		"throttle.js",
+		"retry.js",
+		"example.js"
+	],
+	"keywords": [
+		"pkp",
+		"poland",
+		"public transport",
+		"transit",
+		"api",
+		"hafas"
+	],
+	"author": "Julius Tens <mail@juliustens.eu>",
+	"homepage": "https://github.com/juliuste/pkp-hafas",
+	"repository": "juliuste/pkp-hafas",
+	"bugs": "https://github.com/juliuste/pkp-hafas/issues",
+	"license": "ISC",
+	"engines": {
+		"node": ">=10"
+	},
+	"dependencies": {
+		"hafas-client": "^5.3.0"
+	},
+	"scripts": {
+		"smoke-test": "node example.js >/dev/null",
+		"prepublishOnly": "npm run smoke-test"
+	}
+}
